@@ -1,0 +1,33 @@
+'''power function
+define your function for 2 ints
+asign unity to a variable to allow retainable results in later stage
+using a for loop iter with the index / the power number, the maximum calculation limit
+return the above function
+create slots for your inputs
+call the function in the print statement
+'''
+
+
+
+
+def pow(num1, num2):
+    result = 1
+
+    for i in range(num2):
+        result = result * num1
+    return result
+num1= int(input('enter num1: '))
+num2 = int(input('enter num2: '))
+
+print(pow(num1, num2))
+
+
+'''use a for loop to iter through the defination of factorials'''
+def factorial(x):
+    f =1
+    for i in range(1 , 1+x):
+        f = f*i
+    return f
+x = int(input("enter a number:  "))
+result = factorial(x)
+print(result)
